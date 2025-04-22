@@ -1,4 +1,21 @@
-capa
+capa-troca tela
+
+def exibir_tela_inicial():
+print("Tela Inicial")
+
+def exibir_tela_configuracoes():
+print("Tela de Configurações")
+
+def main():
+exibir_tela_inicial()
+escolha = input("Escolha uma opção (1: Configurações): ")
+if escolha == "1":
+    exibir_tela_configuracoes()
+# Outras opções de tela...
+
+if __name__ == "__main__":
+main()
+
 .container {
     width: 100%;
     height: 100vh; /* altura da tela */
