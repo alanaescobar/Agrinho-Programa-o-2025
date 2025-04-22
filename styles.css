@@ -1,0 +1,29 @@
+capa
+.container {
+    width: 100%;
+    height: 100vh; /* altura da tela */
+    display: flex;
+    justify-content: center; /* centraliza o conteúdo horizontalmente */
+    align-items: center; /* centraliza o conteúdo verticalmente */
+    position: relative; /* para que o logo possa ser posicionado absolutamente dentro */
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("sua-imagem-de-fundo.jpg");
+    background-size: cover; /* ou background-size: contain */
+    /* backdrop-filter: blur(10px); /* efeito de desfoque (opcional) */
+  }
+  
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o logo */
+    z-index: 10; /* garante que o logo fique por cima do fundo */
+    /* estilização do logo aqui */
+  }
